@@ -23,7 +23,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 	@Override
 	public void afterJob(JobExecution jobExecution) {
 		if(jobExecution.getStatus() == BatchStatus.COMPLETED) {
-			log.info("!!! JOB FINISHED! Thanks you for using Spring Boot and Spring Batch with a useless JDBC Datasource!!!!!!");
+			log.info("!!! JOB FINISHED! Thanks you for using Spring Boot and Spring Batch with a useless JDBC Datasource!!!!!!!");
 
 //			jdbcTemplate.query("SELECT first_name, last_name FROM people",
 //				(rs, row) -> new Person(
